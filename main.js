@@ -1,6 +1,6 @@
-const MyComponent = React.createElement('div', null, 'Hello World')
+const MyComponent = React.createElement('h1', null, 'Hello World')
 
 ReactDOM.render(
-    ?,
+    MyComponent,
     document.getElementById('app')
 )
