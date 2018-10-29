@@ -1,4 +1,3 @@
-const MyComponent = React.createElement('h1', null, 'Hello World')
 
 class Planet extends React.Component {
     render() {
@@ -7,6 +6,9 @@ class Planet extends React.Component {
         return React.createElement('a', { href: link, target: "blank" }, this.props.name)
     }
 }
+
+const MyComponent = React.createElement(Planet, { name: 'Mars'}, 'Hello World')
+
 
 ReactDOM.render(
     MyComponent,
